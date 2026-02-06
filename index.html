@@ -8,6 +8,86 @@
 </head>
 <body>
     
+    <h1 class="hidden">Music Mixer Application</h1>
+
+    <header class="grid-con center-grid-con">
+        <div id="instructions" class="box l-col-start-2 l-col-end-5">
+            <p>Instructions</p>
+        </div>
+        <div id="logo" class="box l-col-start-5 l-col-end-9">
+            <p>logo</p>
+        </div>
+        <div id="game-design" class="box l-col-start-9 l-col-end-12">
+            <p>Designing the Game</p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- This section will be for the instrument SVG's, the music notes that are dragged and dropped, as well as app controls -->
+        <section class="grid-con center-grid-con">
+            <h2 class="hidden">Instrument Selection</h2>
+
+            <div id="orchestra-con" class="l-col-start-2 l-col-end-8">
+                <div class="box orchestra-svg">
+                    <p>Orchestra SVG</p>
+                </div>
+                
+                <div id="orchestra-notes" class="box music-notes">
+                    <p>Music Note SVG Selection</p>
+                </div>
+            </div>
+
+            <div id="string-con" class="l-col-start-9 l-col-end-12">
+                <div class="box string-svg">
+                    <p>String SVG</p>
+                </div>
+                
+                <div id="string-notes" class="box music-notes">
+                    <p>Music Note SVG Selection</p>
+                </div>
+            </div>
+
+            <div id="piano-con" class="l-col-start-2 l-col-end-6">
+                <div class="box piano-svg">
+                    <p>Piano SVG</p>
+                </div>
+                
+                <div id="piano-notes" class="box music-notes">
+                    <p>Music Note SVG Selection</p>
+                </div>
+            </div>
+
+            <div id="amp-con" class="box l-col-start-6 l-col-end-9">
+                <p>Amp - play, pause, vol.</p>
+            </div>
+        </section>
+
+        <!-- This section is where the music notes will be dragged and dropped -->
+        <section class="grid-con center-grid-con">
+            <h2 class="hidden">Music Notes Drop Zone</h2>
+
+            <div id="drop-zone-con" class="col-span-full">
+                <div class="box dropZone">1</div>
+                <div class="box dropZone">2</div>
+                <div class="box dropZone">3</div>
+                <div class="box dropZone">4</div>
+                <div class="box dropZone">5</div>
+                <div class="box dropZone">6</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="grid-con center-grid-con">
+        <div class="box l-col-start-6 l-col-end-8">
+            <p>logo</p>
+        </div>
+        <div class="box l-col-start-5 l-col-end-9">
+            <p>Legal Text</p>
+        </div>
+    </footer>
+
 
     <script src="js/main.js"></script>
 </body>
