@@ -7,6 +7,8 @@
 5. Mobile Library Grid 
 6. Tablet Library Grid
 7. Desktop Library Grid
+8. Drop Zone Styling
+9. SVG / Instructment Styling
 
 */
 
@@ -31,6 +33,11 @@ img, embed, object, video, picture {
 body, p, h1, h2, h3, h4, h5 {
    margin: 0px; 
    padding: 0px;
+}
+
+main {
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 
 /* ---4. Utility Classes--- */
@@ -189,3 +196,69 @@ body, p, h1, h2, h3, h4, h5 {
     .l-col-end-12	{grid-column-end: 12;}
     .l-col-end-13	{grid-column-end: 13;}
 }
+
+/* ---8. Drop Zone Styling --- */
+
+#drop-zone-con {
+   margin-top: 25px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.dropZone {
+   width: 100px;
+   height: 100px;
+   background-color: transparent;
+   border: 1px dotted black;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* ---9. SVG / Instrument Styling --- */
+
+#orchestra-con {
+   grid-row: span 4;
+}
+
+.orchestra-svg {
+   max-width: 100%;
+   height: 200px;
+}
+
+#string-con {
+   grid-row: span 7;
+}
+
+.string-svg {
+   max-width: 100%;
+   height: 425px;
+}
+
+.piano-svg {
+   max-width: 100%;
+   height: 150px;
+}
+
+.music-note-con {
+   border: 1px solid black;
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.music-note {
+   width: 50px;
+   height: 50px;
+   margin: 0px 5px;
+   background-color: transparent;
+   border: 1px dotted black;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
