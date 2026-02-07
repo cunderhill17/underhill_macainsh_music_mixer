@@ -1,5 +1,5 @@
-# Music Mixer 🎹
-The MMED-1055 Music Mixer is a one-page application for creating different music compositions. The mixer's theme is an electric keyboard, and using the drag-and-drop function on the keys adds different types of piano chords to the composition. 
+# Music Mixer 🎵
+The MMED-1055 Music Mixer is a one-page application for creating different music compositions. The mixer's theme is classical music, with piano, violin, and orchestra options for different music loops. The mixer uses the drag-and-drop function below each instrument to create the composition. There is also an AMP that controls the volume, play, and pause functions of the music mixer. Enjoy!
 
 ## 💾 Installation
 No installation required. Download the zip file and extract it.
