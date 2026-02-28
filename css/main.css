@@ -10,6 +10,7 @@
 8. Header
 9. Drop Zone Styling
 10. SVG / Instructment Styling
+11. Music Notes
 
 */
 
@@ -270,3 +271,31 @@ main {
    align-items: center;
 }
 
+/* ---11. Music Notes */
+.music-note-con {
+   border: 1px solid #8A7650;
+   border-radius: 10px;
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ebdeb7;
+}
+
+.music-note img {
+   width: 50px;
+   height: 50px;
+   margin: 10px;
+   background-color: #F8F3E1;
+   border: 1px dotted #8A7650;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;
+}
+
+.music-note img:hover {
+   background-color: #fff;
+   cursor: grab;
+}
