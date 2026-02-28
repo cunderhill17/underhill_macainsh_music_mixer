@@ -7,8 +7,9 @@
 5. Mobile Library Grid 
 6. Tablet Library Grid
 7. Desktop Library Grid
-8. Drop Zone Styling
-9. SVG / Instructment Styling
+8. Header
+9. Drop Zone Styling
+10. SVG / Instructment Styling
 
 */
 
@@ -197,7 +198,14 @@ main {
     .l-col-end-13	{grid-column-end: 13;}
 }
 
-/* ---8. Drop Zone Styling --- */
+/* ---8. Header --- */
+.beige-background {
+   background-color: #ebdeb7;
+   padding: 20px;
+   border: #8A7650 2px solid;
+}
+
+/* ---9. Drop Zone Styling --- */
 
 #drop-zone-con {
    margin-top: 25px;
@@ -217,7 +225,7 @@ main {
    align-items: center;
 }
 
-/* ---9. SVG / Instrument Styling --- */
+/* ---10. SVG / Instrument Styling --- */
 
 #orchestra-con {
    grid-row: span 4;
