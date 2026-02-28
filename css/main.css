@@ -12,6 +12,7 @@
 10. AMP
 11. Music Notes
 12. Drop Zone Styling
+13. Footer
 */
 
 
@@ -285,7 +286,7 @@ main {
    cursor: grab;
 }
 
-/* ---11. Drop Zone Styling --- */
+/* ---12. Drop Zone Styling --- */
 
 #drop-zone-con {
    margin-top: 25px;
@@ -303,4 +304,9 @@ main {
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+/* ---13. Footer--- */
+.beige-background:last-of-type {
+   margin-top: 50px;
 }
