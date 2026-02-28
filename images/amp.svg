@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.9 293.02">
-  <g id="AMP">
-    <rect width="270.9" height="293.02" rx="28.91" ry="28.91" style="fill: #c2a68c;"/>
-    <rect x="10" y="10" width="250.9" height="273.02" rx="18.91" ry="18.91" style="fill: #e6d8c3;"/>
-    <polygon points="61.58 33.19 61.58 78.9 100.6 55.49 61.58 33.19" style="fill: #c2a68c;"/>
-    <g>
-      <rect x="123.67" y="32.74" width="7.31" height="45.09" style="fill: #c2a68c;"/>
-      <rect x="142.17" y="32.74" width="7.31" height="45.09" style="fill: #c2a68c;"/>
-    </g>
-    <g>
-      <path d="M206.7,41.61c-7.85-8-20.08-9.81-27.82-5.46-11.14,6.26-10.26,23.75-1.68,29.23,1.55.99,4.67,2.43,10.17,1.94" style="fill: none; stroke: #c2a68c; stroke-miterlimit: 10; stroke-width: 4px;"/>
-      <polygon points="185.16 55.19 185.16 81.68 210.7 68.11 185.16 55.19" style="fill: #c2a68c;"/>
-    </g>
-    <g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.9 293.02">
+  <g id="background">
+    <rect id="amp-dark-brown" width="270.9" height="293.02" rx="28.91" ry="28.91" style="fill: #c2a68c;"/>
+    <rect id="amp-light-brown" x="10" y="10" width="250.9" height="273.02" rx="18.91" ry="18.91" style="fill: #e6d8c3;"/>
+    <g id="amp-lines">
       <polygon points="44.77 288.1 40.54 283.08 262.88 111.46 267.11 116.48 44.77 288.1" style="fill: #c2a68c;"/>
       <polygon points="88.59 290.48 84.35 285.46 262.76 147.54 266.99 152.55 88.59 290.48" style="fill: #c2a68c;"/>
       <polygon points="141.37 288.01 137.14 282.99 263.86 185.17 268.1 190.19 141.37 288.01" style="fill: #c2a68c;"/>
@@ -30,7 +21,22 @@
       <polygon points="87.1 105.42 92.42 101.46 241.65 284.75 236.34 288.72 87.1 105.42" style="fill: #c2a68c;"/>
       <polygon points="121.97 102.21 127.29 98.25 267.98 271.05 262.66 275.01 121.97 102.21" style="fill: #c2a68c;"/>
       <polygon points="160.73 98.67 166.05 94.71 269.27 221.48 263.95 225.44 160.73 98.67" style="fill: #c2a68c;"/>
+      <rect x="1.63" y="90.97" width="267.42" height="17.16" style="fill: #c2a68c;"/>
     </g>
-    <rect x="1.63" y="90.97" width="267.42" height="17.16" style="fill: #c2a68c;"/>
+  </g>
+  <g id="pause-btn">
+    <rect x="117.16" y="27.65" width="38.64" height="54.5" style="fill: #e6d8c3;"/>
+    <g id="pause-symbol">
+      <rect x="123.67" y="32.74" width="7.31" height="45.09" style="fill: #c2a68c;"/>
+      <rect x="142.17" y="32.74" width="7.31" height="45.09" style="fill: #c2a68c;"/>
+    </g>
+  </g>
+  <g id="play-btn">
+    <polygon id="play-symbol" points="61.58 33.19 61.58 78.9 100.6 55.49 61.58 33.19" style="fill: #c2a68c;"/>
+  </g>
+  <g id="reset-btn">
+    <rect x="164.72" y="28.48" width="50.86" height="54.5" style="fill: #e6d8c3;"/>
+    <polygon id="reset-symbol-arrow" points="185.16 55.19 185.16 81.68 210.7 68.11 185.16 55.19" style="fill: #c2a68c;"/>
+    <path id="reset-symbol-line" d="M206.7,41.61c-7.85-8-20.08-9.81-27.82-5.46-11.14,6.26-10.26,23.75-1.68,29.23,1.55.99,4.67,2.43,10.17,1.94" style="fill: none; stroke: #c2a68c; stroke-miterlimit: 10; stroke-width: 4px;"/>
   </g>
 </svg>
