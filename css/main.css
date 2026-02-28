@@ -8,11 +8,12 @@
 6. Tablet Library Grid
 7. Desktop Library Grid
 8. Header
-9. SVG / Instructment Styling
-10. AMP
-11. Music Notes
-12. Drop Zone Styling
-13. Footer
+9. Body
+10. SVG / Instructment Styling
+11. AMP
+12. Music Notes
+13. Drop Zone Styling
+14. Footer
 */
 
 
@@ -207,7 +208,12 @@ main {
    border: #8A7650 2px solid;
 }
 
-/* ---9. SVG / Instrument Styling --- */
+/* ---9. Body--- */
+body {
+   background-color: #F8F3E1;
+}
+
+/* ---10. SVG / Instrument Styling --- */
 
 #orchestra-con {
    grid-row: span 4;
@@ -239,7 +245,7 @@ main {
    margin-top: 20px;
 }
 
-/* --10. AMP--- */
+/* ---11. AMP--- */
 #play-btn {
    cursor: pointer;
 }
@@ -257,7 +263,7 @@ main {
    
 }
 
-/* ---11. Music Notes--- */
+/* ---12. Music Notes--- */
 .music-note-con {
    border: 1px solid #8A7650;
    border-radius: 10px;
@@ -286,7 +292,7 @@ main {
    cursor: grab;
 }
 
-/* ---12. Drop Zone Styling --- */
+/* ---13. Drop Zone Styling --- */
 
 #drop-zone-con {
    margin-top: 25px;
@@ -306,7 +312,7 @@ main {
    align-items: center;
 }
 
-/* ---13. Footer--- */
+/* ---14. Footer--- */
 .beige-background:last-of-type {
    margin-top: 50px;
 }
