@@ -10,8 +10,8 @@
 8. Header
 9. Drop Zone Styling
 10. SVG / Instructment Styling
-11. Music Notes
-
+11. AMP
+12. Music Notes
 */
 
 
@@ -258,7 +258,25 @@ main {
    margin-top: 20px;
 }
 
-/* ---11. Music Notes */
+/* --11. AMP--- */
+#play-btn {
+   cursor: pointer;
+}
+
+#pause-btn {
+   cursor: pointer;
+}
+
+#reset-btn {
+   cursor: pointer;
+}
+
+#amp-con svg {
+   margin: 20px;
+   
+}
+
+/* ---12. Music Notes--- */
 .music-note-con {
    border: 1px solid #8A7650;
    border-radius: 10px;
