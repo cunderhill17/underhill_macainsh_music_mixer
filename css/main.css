@@ -8,10 +8,10 @@
 6. Tablet Library Grid
 7. Desktop Library Grid
 8. Header
-9. Drop Zone Styling
-10. SVG / Instructment Styling
-11. AMP
-12. Music Notes
+9. SVG / Instructment Styling
+10. AMP
+11. Music Notes
+12. Drop Zone Styling
 */
 
 
@@ -206,27 +206,7 @@ main {
    border: #8A7650 2px solid;
 }
 
-/* ---9. Drop Zone Styling --- */
-
-#drop-zone-con {
-   margin-top: 25px;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
-
-.dropZone {
-   width: 100px;
-   height: 100px;
-   background-color: transparent;
-   border: 1px dotted black;
-   border-radius: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-/* ---10. SVG / Instrument Styling --- */
+/* ---9. SVG / Instrument Styling --- */
 
 #orchestra-con {
    grid-row: span 4;
@@ -258,7 +238,7 @@ main {
    margin-top: 20px;
 }
 
-/* --11. AMP--- */
+/* --10. AMP--- */
 #play-btn {
    cursor: pointer;
 }
@@ -276,7 +256,7 @@ main {
    
 }
 
-/* ---12. Music Notes--- */
+/* ---11. Music Notes--- */
 .music-note-con {
    border: 1px solid #8A7650;
    border-radius: 10px;
@@ -303,4 +283,24 @@ main {
 .music-note img:hover {
    background-color: #fff;
    cursor: grab;
+}
+
+/* ---11. Drop Zone Styling --- */
+
+#drop-zone-con {
+   margin-top: 25px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.dropZone {
+   width: 100px;
+   height: 100px;
+   background-color: transparent;
+   border: 1px dotted #8A7650;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
