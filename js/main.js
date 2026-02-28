@@ -1,7 +1,7 @@
 //Variables
 const musicNotes = document.querySelectorAll('.music-note');
 const dropZones = document.querySelectorAll('.dropZone');
-
+const reset = document.querySelector('#reset-btn');
 let draggableIcon = null;
 
 
@@ -34,6 +34,20 @@ function droppedMusicNote() {
 }
 
 
+//resets the music icons to their original positions
+function resetMusicDrops() {
+  musicNotes.forEach(note => {
+
+    const originalParentId = note.dataset.originalParent;
+    const originalParent = document.querySelector(`#${originalParentId}`);
+
+    if (originalParent) {
+      originalParent.appendChild(note);
+    }
+  });
+}
+
+
 
 //Event Listeners
 
@@ -46,3 +60,5 @@ dropZones.forEach(zone => {
   zone.addEventListener('dragover', dragNoteover);
   zone.addEventListener('drop', droppedMusicNote);
 });
+
+reset.addEventListener('click', resetMusicDrops);
