@@ -335,3 +335,11 @@ input[type="range"] {
 .beige-background:last-of-type {
    margin-top: 50px;
 }
+
+#legal-text {
+   margin-top: 20px;
+   font-family: "Gabarito", sans-serif;
+   color: #554830;
+   display: flex;
+   justify-content: center;
+}
