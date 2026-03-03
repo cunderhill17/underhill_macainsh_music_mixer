@@ -215,6 +215,30 @@ main {
    border: #8A7650 2px solid;
 }
 
+#game-design {
+   display: flex;
+   align-items: center;
+}
+
+#game-design a {
+   background-color: #8A7650;
+   color: #fff;   
+   border-radius: 18px;
+   padding: 25px;
+   text-decoration: none;
+   font-size: 20px;
+   font-family: "Gabarito", sans-serif;   
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#game-design a:hover {
+   background-color: #af9666; 
+   cursor: pointer;
+}
+
 /* ---10. Body--- */
 body {
    background-color: #F8F3E1;
