@@ -270,6 +270,18 @@ body {
    
 }
 
+#volume-con:has(input[type="range"]) {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+input[type="range"] {
+  accent-color: #8A7650; 
+  cursor: pointer;
+  margin-top: 15px;
+}
+
 /* ---13. Music Notes--- */
 .music-note-con {
    border: 1px solid #8A7650;
