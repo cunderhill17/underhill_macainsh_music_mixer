@@ -10,8 +10,7 @@ let gainNode;
 const audioElements = document.querySelectorAll("audio");
 const playButton = document.querySelector("#play-btn");
 const pauseButton = document.querySelector("#pause-btn");
-
-
+const volumeControl = document.querySelector("#volume");
 
 
 
@@ -172,4 +171,10 @@ reset.addEventListener('click', resetMusicDrops);
 
 playButton.addEventListener("click", handlePlayButtonClick);
 
-pauseButton.addEventListener('click', handlePauseButtonClick)
+pauseButton.addEventListener('click', handlePauseButtonClick);
+
+volumeControl.addEventListener("input", () => {
+  if (gainNode) {
+    gainNode.gain.value = volumeControl.value;
+  }
+});
