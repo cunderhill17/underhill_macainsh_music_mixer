@@ -219,17 +219,12 @@ main {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #8A7650;
-   padding: 25px;
-}
-
-#instructions summary {
-   background-color: #8A7650;
+   background-color: #8A7650;   
    color: #fff;
+   padding: 25px;
    border-radius: 18px;
    font-size: 20px;
-   padding: 25px;
-   font-family: "Gabarito", sans-serif;  
+   font-family: "Gabarito", sans-serif;
 }
 
 #instructions summary:hover {
@@ -243,13 +238,13 @@ main {
    border-radius: 18px;
    font-size: 20px;
    padding: 25px;
-   font-family: "Gabarito", sans-serif;  
+   font-family: "Gabarito", sans-serif; 
 }
 
 #instructions ul li {
    margin-bottom: 10px;
    font-size: 15px;
-   margin-left: 10px;
+   margin-left: 10px; 
 }
 
 #game-design {
