@@ -1,7 +1,9 @@
-//Variables
+/* ---VARIABLES--- */
+
 const musicNotes = document.querySelectorAll('.music-note');
 const dropZones = document.querySelectorAll('.dropZone');
 const reset = document.querySelector('#reset-btn');
+const musicContainers = document.querySelectorAll('.music-note-con');
 let draggableIcon = null;
 
 let audioContext;
@@ -21,22 +23,27 @@ const volumeControl = document.querySelector("#volume");
 
 
 
-//Functions
+/* ---FUNCTIONS--- */
+
 musicNotes.forEach(note => {
     note.dataset.originalParent = note.parentElement.id; // sets the positioning of the parent element for when the drops are reset
 });
+
 
 function dragMusicNote() {
   draggableIcon = this; //Sets draggableIcon to the specific item within the node list that's being dragged 
 }
 
+
 function endDragMusicNote() {
   draggableIcon = null; //returns the draggableIcon variable to null
 }
 
+
 function dragNoteover(e) {
   e.preventDefault(); // required to allow drop
 }
+
 
 //Appends dropped icons to target zone and plays music if music is currently playing 
 function droppedMusicNote() {
@@ -54,6 +61,29 @@ function droppedMusicNote() {
   if (audioEl && playButton.dataset.playing === "true") {
     audioEl.currentTime = 0;
     audioEl.play();
+  }
+}
+
+
+//Functions to allow individual music notes to be dragged back to their original containers instead of having to reset everything
+function returnNote(e) {
+  e.preventDefault();
+}
+
+function dropReturnedNote() {
+  if (!draggableIcon) return;
+
+  const audioId = draggableIcon.querySelector('img').dataset.audio;
+  const audioEl = document.querySelector(`#${audioId}`);
+
+  //resets audio for the specific note being returned & pauses it so it's no longer playing
+  if (audioEl) {
+    audioEl.pause();
+    audioEl.currentTime = 0;
+  }
+
+  if (this.id === draggableIcon.dataset.originalParent) {
+    this.appendChild(draggableIcon);
   }
 }
 
@@ -148,6 +178,7 @@ async function handlePauseButtonClick() {
   playButton.dataset.playing = "false";
 }
 
+
 //Add music notes to the dropzones using the keyboard buttons
 function logKeyboardCode(e) {
   // console.log(e.keyCode);
@@ -177,7 +208,8 @@ function logKeyboardCode(e) {
 
 
 
-//Event Listeners
+/* ---EVENT LISTENERS--- */
+
 musicNotes.forEach(note => {
   note.addEventListener('dragstart', dragMusicNote);
   note.addEventListener('dragend', endDragMusicNote);
@@ -187,6 +219,12 @@ dropZones.forEach(zone => {
   zone.addEventListener('dragover', dragNoteover);
   zone.addEventListener('drop', droppedMusicNote);
 });
+
+//Return individual notes by dragging them back to their original container
+musicContainers.forEach(con => {
+  con.addEventListener('dragover', returnNote);
+  con.addEventListener('drop', dropReturnedNote);
+})
 
 reset.addEventListener('click', resetMusicDrops);
 
