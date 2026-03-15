@@ -148,7 +148,28 @@ async function handlePauseButtonClick() {
   playButton.dataset.playing = "false";
 }
 
+//Add music notes to the dropzones using the keyboard buttons
+function logKeyboardCode(e) {
+  // console.log(e.keyCode);
+  let targetDiv = document.querySelector(`div[data-key="${e.keyCode}"]`);
 
+  for(let i = 0; i < dropZones.length; i++) {
+    if (!dropZones[i].querySelector('.music-note')) {
+      dropZones[i].appendChild(targetDiv);
+      break;
+    }
+  }
+
+  //This allows the audio to auto play if music is already playing
+  const audioId = targetDiv.querySelector('img').dataset.audio;
+  const audioEl = document.querySelector(`#${audioId}`);
+
+  if (audioEl && playButton.dataset.playing === "true") {
+    audioEl.currentTime = 0;
+    audioEl.play();
+  }
+
+}
 
 
 
@@ -178,3 +199,6 @@ volumeControl.addEventListener("input", () => {
     gainNode.gain.value = volumeControl.value;
   }
 });
+
+
+window.addEventListener("keyup", logKeyboardCode);
