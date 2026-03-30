@@ -5,7 +5,11 @@ The MMED-1055 Music Mixer is a one-page application for creating different music
 No installation required. Download the zip file and extract it.
 
 ## 🌐 Usage
-Open the `index.html` file in the browser of your choice.
+1. Open a code editor of your choice.
+2. Start a live server (e.g. Live Server By: Ritwick Dey).
+3. Use the music mixer.
+
+*Opening it in a live server ensures the music will play properly.
 
 ## 🤝 Contributing 
 - Fork it!
